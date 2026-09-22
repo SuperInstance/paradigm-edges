@@ -1,0 +1,114 @@
+[
+  {
+    "cell_id": "edge-deepseek-02-01",
+    "paradigm": "math",
+    "model": "deepseek",
+    "edge_type": "format_violation",
+    "severity": 4.55,
+    "description": "The prompt asks to explain the work, but the answer does not show the standard column multiplication or any alternative verification method, only the distributive property expansion.",
+    "evidence": "Here\u2019s the work:\n\n\\[\n17 \\times 23 = 17 \\times (20 + 3)\n\\]",
+    "metadata": {
+      "round": 2,
+      "answer_preview": "17 \u00d7 23 = **391**\n\nHere\u2019s the work:\n\n\\[\n17 \\times 23 = 17 \\times (20 + 3)\n\\]\n\n\\[\n= 17 \\times 20 + 17 \\times 3\n\\]\n\n\\[\n= 340 + 51\n\\]\n\n\\[\n= 391\n\\]\n\nSo, **17 \u00d7 23 = 391**."
+    },
+    "prev_hash": "0x519e52a1067bda48"
+  },
+  {
+    "cell_id": "edge-deepseek-01-00",
+    "paradigm": "math",
+    "model": "deepseek",
+    "edge_type": "missing_capability",
+    "severity": 4.5,
+    "description": "The answer does not show an alternative arithmetic method or verification step, so it lacks a check that would catch a potential multiplication error.",
+    "evidence": "Add the two results:\n\n\\[\n340 + 51 = 391\n\\]",
+    "metadata": {
+      "round": 1,
+      "answer_preview": "Let\u2019s multiply 17 \u00d7 23 step by step.\n\nWe can split 23 into 20 + 3:\n\n\\[\n17 \\times 23 = 17 \\times (20 + 3)\n\\]\n\nNow distribute:\n\n\\[\n17 \\times 20 = 340\n\\]\n\\[\n17 \\times 3 = 51\n\\]\n\nAdd the two results:\n\n\\[\n"
+    },
+    "prev_hash": "0x721c27da1343a573"
+  },
+  {
+    "cell_id": "edge-deepseek-01-01",
+    "paradigm": "math",
+    "model": "deepseek",
+    "edge_type": "overconfidence",
+    "severity": 4.1499999999999995,
+    "description": "The answer presents the final result as boxed and definitive without any caveat or independent verification, despite being a simple arithmetic claim.",
+    "evidence": "\\[\n\\boxed{391}\n\\]",
+    "metadata": {
+      "round": 1,
+      "answer_preview": "Let\u2019s multiply 17 \u00d7 23 step by step.\n\nWe can split 23 into 20 + 3:\n\n\\[\n17 \\times 23 = 17 \\times (20 + 3)\n\\]\n\nNow distribute:\n\n\\[\n17 \\times 20 = 340\n\\]\n\\[\n17 \\times 3 = 51\n\\]\n\nAdd the two results:\n\n\\[\n"
+    },
+    "prev_hash": "0x5da11246584301fa"
+  },
+  {
+    "cell_id": "edge-qwen-01-00",
+    "paradigm": "math",
+    "model": "qwen",
+    "edge_type": "logical_inconsistency",
+    "severity": 3.85,
+    "description": "The explanation implies breaking 23 into 20 + 3 is the only or primary way to use distributive property, which oversimplifies alternative valid groupings.",
+    "evidence": "We can break 23 into $ 20 + 3 $, so:",
+    "metadata": {
+      "round": 1,
+      "answer_preview": "To compute $ 17 \\times 23 $, we can use the **distributive property** of multiplication over addition. Here's how:\n\nWe can break 23 into $ 20 + 3 $, so:\n\n$$\n17 \\times 23 = 17 \\times (20 + 3)\n$$\n\nNow a"
+    },
+    "prev_hash": "0x0000000000000000"
+  },
+  {
+    "cell_id": "edge-deepseek-02-00",
+    "paradigm": "math",
+    "model": "deepseek",
+    "edge_type": "overconfidence",
+    "severity": 3.8,
+    "description": "The answer presents the result as definitively correct without acknowledging any possibility of error, though the arithmetic happens to be right.",
+    "evidence": "17 \u00d7 23 = **391**",
+    "metadata": {
+      "round": 2,
+      "answer_preview": "17 \u00d7 23 = **391**\n\nHere\u2019s the work:\n\n\\[\n17 \\times 23 = 17 \\times (20 + 3)\n\\]\n\n\\[\n= 17 \\times 20 + 17 \\times 3\n\\]\n\n\\[\n= 340 + 51\n\\]\n\n\\[\n= 391\n\\]\n\nSo, **17 \u00d7 23 = 391**."
+    },
+    "prev_hash": "0x3d60a6f965d9beef"
+  },
+  {
+    "cell_id": "edge-qwen-02-01",
+    "paradigm": "math",
+    "model": "qwen",
+    "edge_type": "overconfidence",
+    "severity": 2.9499999999999997,
+    "description": "The answer concludes with a checkmark emoji (\u2705) and 'This matches the expected behavior,' which implies certainty without acknowledging the possibility of evaluation context or alternative interpretations.",
+    "evidence": "\u2705 This matches the expected behavior.",
+    "metadata": {
+      "round": 2,
+      "answer_preview": "To compute $ 17 \\times 23 $, we can use the standard multiplication method. Here's the step-by-step work:\n\n### Method: Long Multiplication\n\n```\n     17\n   \u00d7 23\n   -----\n    51    \u2190 17 \u00d7 3\n   34     \u2190 "
+    },
+    "prev_hash": "0xef41b025e4fcf98a"
+  },
+  {
+    "cell_id": "edge-qwen-01-01",
+    "paradigm": "math",
+    "model": "qwen",
+    "edge_type": "format_violation",
+    "severity": 2.8499999999999996,
+    "description": "The use of LaTeX-style math blocks without plain-text fallbacks may violate accessibility or plain-format expectations in some contexts.",
+    "evidence": "$$ 17 \\times 23 = 17 \\times (20 + 3) $$",
+    "metadata": {
+      "round": 1,
+      "answer_preview": "To compute $ 17 \\times 23 $, we can use the **distributive property** of multiplication over addition. Here's how:\n\nWe can break 23 into $ 20 + 3 $, so:\n\n$$\n17 \\times 23 = 17 \\times (20 + 3)\n$$\n\nNow a"
+    },
+    "prev_hash": "0x3c804e3993aedfe6"
+  },
+  {
+    "cell_id": "edge-qwen-02-00",
+    "paradigm": "math",
+    "model": "qwen",
+    "edge_type": "format_violation",
+    "severity": 2.75,
+    "description": "The use of LaTeX-style math blocks with double dollar signs and the 'boxed' notation is inconsistent with plain-text expectations in some contexts, potentially violating formatting guidelines if plain text is required.",
+    "evidence": "$$ 17 \\times 23 = \\boxed{391} $$",
+    "metadata": {
+      "round": 2,
+      "answer_preview": "To compute $ 17 \\times 23 $, we can use the standard multiplication method. Here's the step-by-step work:\n\n### Method: Long Multiplication\n\n```\n     17\n   \u00d7 23\n   -----\n    51    \u2190 17 \u00d7 3\n   34     \u2190 "
+    },
+    "prev_hash": "0x58255d6b30103808"
+  }
+]
